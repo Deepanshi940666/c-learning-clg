@@ -108,5 +108,28 @@ int main() {
         printf("Not a valid no.");
     }
 
+  
+   // quadrants by angle
+
+    float angle;
+    int quad;
+    printf("Enter the angle:");
+    scanf("%f", &angle);
+
+    if (angle >= 0 && angle <= 90)
+        printf("It's first Quadrant angle");
+
+    else if (angle > 90 && angle <= 180)
+        printf("It's second Quadrant angle");
+
+    else if (angle > 180 && angle <= 270)
+        printf("It's third Quadrant angle");
+
+    else if (angle > 270 && angle <= 360)
+        printf("It's fourth Quadrant angle");
+
+    else
+        printf("give me positive angle");
+
     return 0;
 }
